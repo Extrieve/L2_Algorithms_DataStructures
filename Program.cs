@@ -54,14 +54,14 @@ namespace L2_Algorithms_DataStructures
             openWith.Add("dib", "paint.exe");
             openWith.Add("rtf", "wordpad.exe");
 
-            // Why do get an error below? 
+            // Why do get an error below?
             // openWith.Add("rtf", "word.exe");
 
             // How can we fix the error?
 
 
 
-            // The key is used to index values 
+            // The key is used to index values
             Debug.WriteLine("For key = \"rtf\", value = {0}.", openWith["rtf"]);
 
             // The values associated with a key can be changed
@@ -75,7 +75,7 @@ namespace L2_Algorithms_DataStructures
             Dictionary<string, int> CourseEnrollments = new Dictionary<string, int>();
             CourseEnrollments["Ism 6225"] = 55;
             CourseEnrollments["Ism 6235"] = 60;
-            CourseEnrollments["Ism 6230"] = 20;
+            CourseEnrollments["Ism 6230"] = 30;
 
             Console.WriteLine(CourseEnrollments["Ism 6225"]);
             Console.WriteLine(CourseEnrollments.ContainsKey("Haha"));
