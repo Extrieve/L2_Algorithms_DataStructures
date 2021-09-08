@@ -72,6 +72,14 @@ namespace L2_Algorithms_DataStructures
             openWith.Remove("doc");
 
             // Exercise 3: Create a new dictionary called CourseEnrollments
+            Dictionary<string, int> CourseEnrollments = new Dictionary<string, int>();
+            CourseEnrollments["Ism 6225"] = 55;
+            CourseEnrollments["Ism 6235"] = 60;
+            CourseEnrollments["Ism 6230"] = 20;
+
+            Console.WriteLine(CourseEnrollments["Ism 6225"]);
+            Console.WriteLine(CourseEnrollments.ContainsKey("Haha"));
+            CourseEnrollments["Ism 6225"] = CourseEnrollments["Ism 6235"];
             // Use strings as the key type and int as the value type
             // Populate the dictionary with 3 course names (e.g. 'ISM 6225') as keys,
             //  and the corresponding enrollments as values.
